@@ -15,8 +15,11 @@ window:
     columns: 210
     lines: 53
   padding:
-    x: 5
-    y: 5
+    #x: 5
+    #y: 5
+     x: 10
+     y: 10
+
   dynamic_padding: true
   decorations: none
 scrolling:
@@ -29,8 +32,51 @@ env:
   WINIT_X11_SCALE_FACTOR: "1.0"
 
 # Font Customization
+#font:
+#  # Normal (roman) font face
+#  normal:
+#    # Font family
+#    #
+#    # Default:
+#    #   - (macOS) Menlo
+#    #   - (Linux/BSD) monospace
+#    #   - (Windows) Consolas
+#    #family: 'CaskaydiaCove Nerd Font'
+#    family: 'monospace'
+#    # The `style` can be specified to pick a specific face.
+#    style: SemiBold
+#
+#  # Bold font face
+#  bold:
+#    # Font family
+#    #
+#    # If the bold family is not specified, it will fall back to the
+#    # value specified for the normal font.
+#    family: 'JetBrainsMono Nerd Font'
+#
+#    # The `style` can be specified to pick a specific face.
+#    #style: Bold
+#
+#  # Italic font face
+#  italic:
+#    # Font family
+#    #
+#    # If the italic family is not specified, it will fall back to the
+#    # value specified for the normal font.
+#    family: 'JetBrainsMono Nerd Font'
+#    # family: 'Fira Code iScript'
+#
+#  # bold_italic:
+#  #   family: 'Fira Code iScript'
+#  #   style: Bold 
+#
+#    # The `style` can be specified to pick a specific face.
+#    #style: Italic
+#
 font:
   # Normal (roman) font face
+  #size: 9.5
+  size: 15 
   normal:
     # Font family
     #
@@ -38,10 +84,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    #family: 'CaskaydiaCove Nerd Font'
-    family: 'monospace'
+    family: fantasque sans mono
+
     # The `style` can be specified to pick a specific face.
-    style: SemiBold
+    #style: Regular
 
   # Bold font face
   bold:
@@ -49,7 +95,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: 'JetBrainsMono Nerd Font'
+    family: fantasque sans mono
 
     # The `style` can be specified to pick a specific face.
     #style: Bold
@@ -60,19 +106,23 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: 'JetBrainsMono Nerd Font'
-    # family: 'Fira Code iScript'
-
-  # bold_italic:
-  #   family: 'Fira Code iScript'
-  #   style: Bold 
+    family:  fantasque sans mono
 
     # The `style` can be specified to pick a specific face.
     #style: Italic
 
+  # Bold italic font face
+  bold_italic:
+    # Font family
+    #
+    # If the bold italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family:  fantasque sans mono
+
+
   offset:
     x: 0
-    y: 0
+    y: 3
   # Point size
   size: 12
 
@@ -336,6 +386,7 @@ colors:
 
 
 
+
 # # Base16 Solarized Dark 256 - alacritty color config
 # # Ethan Schoonover (modified by aramisgithub)
 # colors:
@@ -379,6 +430,34 @@ colors:
   #   - { index: 20, color: '#839496' }
   #   - { index: 21, color: '#eee8d5' }
 
+# Colors (Dracula)
+colors:
+  # Default colors
+  primary:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#ff5555'
+    green:   '#50fa7b'
+    yellow:  '#f1fa8c'
+    blue:    '#caa9fa'
+    magenta: '#ff79c6'
+    cyan:    '#8be9fd'
+    white:   '#bfbfbf'
+
+  # Bright colors
+  bright:
+    black:   '#575b70'
+    red:     '#ff6e67'
+    green:   '#5af78e'
+    yellow:  '#f4f99d'
+    blue:    '#caa9fa'
+    magenta: '#ff92d0'
+    cyan:    '#9aedfe'
+    white:   '#e6e6e6'
 
 
 hide_cursor_when_typing: true
